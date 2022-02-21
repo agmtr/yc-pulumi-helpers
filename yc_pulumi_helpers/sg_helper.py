@@ -1,7 +1,7 @@
 import pulumi
 import pulumi_yandex as yandex
 
-def allow_default_rules(sg_id: str):
+def apply_default_rules(sg_id: str):
     allow_egress(sg_id)
     allow_ingress_self_sg(sg_id)
 
