@@ -1,11 +1,12 @@
 import setuptools
+import yc_pulumi_helpers
 
 with open("README.md") as file:
     read_me_description = file.read()
 
 setuptools.setup(
     name="yc_pulumi_helpers",
-    version="0.1",
+    version=yc_pulumi_helpers.__version__,
     author="agmtr",
     author_email="agmtr@pm.me",
     description="Yandex Cloud Pulumi Helpers.",
