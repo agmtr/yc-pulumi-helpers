@@ -31,12 +31,3 @@ def allow_ssh(sg_id: str):
         protocol="TCP",
         security_group_binding=sg_id
     )
-
-def allow_ssh_self_sg(sg_id: str):
-    yandex.VpcSecurityGroupRule("ssh",
-        direction="ingress",
-        predefined_target="self_security_group",
-        port=22,
-        protocol="TCP",
-        security_group_binding=sg_id
-    )
